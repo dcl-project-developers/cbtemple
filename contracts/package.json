@@ -1,0 +1,19 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "remix": "remixd --remix-ide \"http://remix.ethereum.org\" -s ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

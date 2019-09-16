@@ -1,0 +1,18 @@
+{
+  "manifestVersion": "2.2",
+  "contracts": {
+    "GuestBook": "GuestBook"
+  },
+  "dependencies": {},
+  "name": "contracts",
+  "version": "1.0.0",
+  "compiler": {
+    "manager": "openzeppelin",
+    "solcVersion": "0.5.7",
+    "compilerSettings": {
+      "optimizer": {
+        "enabled": true
+      }
+    }
+  }
+}

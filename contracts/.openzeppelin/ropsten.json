@@ -1,0 +1,227 @@
+{
+  "contracts": {
+    "GuestBook": {
+      "address": "0x100583b25d6B17141957B1CB7cd0772a897F561c",
+      "constructorCode": "608060405234801561001057600080fd5b50610fc3806100206000396000f3fe",
+      "bodyBytecodeHash": "a833d362eac6c2caec7fe8dab702b231a147e9ad235a6b095280bb64a8ae91af",
+      "localBytecodeHash": "1b2b269b17adbb84a4c7b7351e3d338631268fa1f602637e738e7fd17f7997d2",
+      "deployedBytecodeHash": "1b2b269b17adbb84a4c7b7351e3d338631268fa1f602637e738e7fd17f7997d2",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_array:dyn<t_address>": {
+          "id": "t_array:dyn<t_address>",
+          "valueType": "t_address",
+          "length": "dyn",
+          "kind": "array",
+          "label": "address[]"
+        },
+        "t_uint16": {
+          "id": "t_uint16",
+          "kind": "elementary",
+          "label": "uint16"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_struct<GuestBook.Entry>": {
+          "id": "t_struct<GuestBook.Entry>",
+          "kind": "struct",
+          "label": "GuestBook.Entry",
+          "members": [
+            {
+              "label": "id",
+              "astId": 862,
+              "type": "t_uint256",
+              "src": "3618:7:2"
+            },
+            {
+              "label": "owner",
+              "astId": 864,
+              "type": "t_address",
+              "src": "3636:13:2"
+            },
+            {
+              "label": "message",
+              "astId": 866,
+              "type": "t_string",
+              "src": "3660:14:2"
+            }
+          ]
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_struct<GuestBook.Entry>>": {
+          "id": "t_mapping<t_struct<GuestBook.Entry>>",
+          "valueType": "t_struct<GuestBook.Entry>",
+          "label": "mapping(key => GuestBook.Entry)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initialized",
+          "astId": 3,
+          "type": "t_bool",
+          "src": "757:24:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "initializing",
+          "astId": 5,
+          "type": "t_bool",
+          "src": "876:25:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin\\upgrades\\contracts\\Initializable.sol",
+          "label": "______gap",
+          "astId": 61,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:0"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "owner",
+          "astId": 465,
+          "type": "t_address",
+          "src": "143:20:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "moderatorsArray",
+          "astId": 468,
+          "type": "t_array:dyn<t_address>",
+          "src": "170:25:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "serversArray",
+          "astId": 471,
+          "type": "t_array:dyn<t_address>",
+          "src": "202:22:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "totalModerators",
+          "astId": 473,
+          "type": "t_uint16",
+          "src": "231:29:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "totalServers",
+          "astId": 475,
+          "type": "t_uint16",
+          "src": "267:26:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "moderators",
+          "astId": 479,
+          "type": "t_mapping<t_bool>",
+          "src": "300:35:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "servers",
+          "astId": 483,
+          "type": "t_mapping<t_bool>",
+          "src": "342:32:2"
+        },
+        {
+          "contract": "BasicAccessControl",
+          "path": "contracts\\GuestBook.sol",
+          "label": "isMaintaining",
+          "astId": 485,
+          "type": "t_bool",
+          "src": "381:25:2"
+        },
+        {
+          "contract": "GuestBook",
+          "path": "contracts\\GuestBook.sol",
+          "label": "totalEntries",
+          "astId": 860,
+          "type": "t_uint256",
+          "src": "3561:24:2"
+        },
+        {
+          "contract": "GuestBook",
+          "path": "contracts\\GuestBook.sol",
+          "label": "hasEntry",
+          "astId": 871,
+          "type": "t_mapping<t_bool>",
+          "src": "3690:33:2"
+        },
+        {
+          "contract": "GuestBook",
+          "path": "contracts\\GuestBook.sol",
+          "label": "entries",
+          "astId": 875,
+          "type": "t_mapping<t_struct<GuestBook.Entry>>",
+          "src": "3730:30:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "contracts/GuestBook": [
+      {
+        "address": "0x884CaD9B1c17C3c062C50A55d62DcD534ce7669B",
+        "version": "1.0.0",
+        "implementation": "0x100583b25d6B17141957B1CB7cd0772a897F561c",
+        "admin": "0x6b14eBae685ECe127Fa55D31225e1a2C72e221fA",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x6b14eBae685ECe127Fa55D31225e1a2C72e221fA"
+  }
+}
